@@ -10,11 +10,11 @@ class Profil extends StatefulWidget {
 }
 
 class _ProfilState extends State<Profil> {
-  int _selectedIndex = 2; // Default to 'Profil' tab
+  int _selectedIndex = 2; 
 
-  // Pages untuk BottomNavigationBar
+
   static final List<Widget> _pages = <Widget>[
-    const Home(), // Ganti dari Center(...) menjadi Home()
+    const Home(), 
     const Center(
       child: Text(
         'Search Page',
@@ -30,7 +30,7 @@ class _ProfilState extends State<Profil> {
         style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
       ),
     ),
-    const SizedBox(), // Dummy untuk Logout
+    const SizedBox(), 
   ];
 
   static const List<String> _pageTitles = [

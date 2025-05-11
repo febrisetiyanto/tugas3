@@ -19,7 +19,7 @@ class _LoginState extends State<Login> {
     String password = passwordController.text.trim();
 
     if (email.isNotEmpty && password.isNotEmpty) {
-      // Simpan status login ke SharedPreferences
+     
       SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setBool('isLoggedIn', true);
 
